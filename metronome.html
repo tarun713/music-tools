@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/musictools.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+
+
+    <!-- Menu -->
+    <nav>
+        <div class="nav-wrapper light-blue lighten-1">
+            <a href="#" class="brand-logo center">Music Tools</a>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <h1 class="header center">Metronome</h1>
+
+        <h5 class="header center">Keeps the beat.</h5>
+
+        <div class="row center">
+
+            <div class="input-field">
+                <span class="metronome-input-label">Beats</span>
+                <input id="beats" type="number" class="right-align metronome-input" value="4">
+            </div>
+
+            <div class="input-field">
+                <span class="metronome-input-label">Tempo</span>
+                <input id="bpm" type="number" class="right-align metronome-input" value="60">
+            </div>
+
+            <div class="input-field">
+                <p>
+                    <input type="checkbox" id="toneDiff" />
+                    <label for="toneDiff">Unique tone for Beat 1</label>
+                </p>
+            </div>
+        </div>
+
+        <div class="row center">
+            <a id="startButton" class="waves-effect waves-light btn">Start</a>
+        </div>
+
+        <div class="row center">
+            <div id="beat1" class="chip">
+                1
+            </div>
+            <div id="beat2" class="chip">
+                2
+            </div>
+            <div id="beat3" class="chip">
+                3
+            </div>
+            <div id="beat4" class="chip">
+                4
+            </div>
+        </div>
+    </div>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/metronome.js"></script>
+</body>
+
+</html>
